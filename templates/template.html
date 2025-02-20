@@ -1,0 +1,26 @@
+{% extends "./base.html" %}
+
+{% block title %}{{name}}{% endblock %}
+
+{% block content %}
+
+{% for project in projects %}
+
+<div>
+    <h1>{{project.name}}</h1>
+    <h2>{{project.category}}</h2>
+    <p>{{project.description}}</p>
+    <div>
+        <a href="{{project.url }}">Project URL</a>
+        <a href="{{ project.repo_url }}">Project Repo URL</a>
+    </div>
+    <div>
+        {% for technology in project.technologies %}
+        <span>{{technology}}</span>
+        {% endfor %}
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}
