@@ -4,23 +4,65 @@
 
 {% block content %}
 
-{% for project in projects %}
+<header>
+    <h1>Hi! I'm Bernard Rodrigues</h1>
+    <h2><span>Django/React</span><br>FullStack Developer<h2>
+</header>
 
-<div>
-    <h1>{{project.name}}</h1>
-    <h2>{{project.category}}</h2>
-    <p>{{project.description}}</p>
-    <div>
-        <a href="{{project.url }}">Project URL</a>
-        <a href="{{ project.repo_url }}">Project Repo URL</a>
-    </div>
-    <div>
-        {% for technology in project.technologies %}
-        <span>{{technology}}</span>
+<main>
+    <section id="bio">
+        <h2 class="title">My Carreer</h2>
+        <div class="divider"></div>
+        <div class="bio">
+            <img src="./assets/images/BernardRodrigues.jpg" alt="Bernard's picture">
+            <div>
+                {% for paragraph in bio %}
+                <p>{{paragraph}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies">
+        <h2 class="title">Technologies</h2>
+        <div class="divider"></div>
+        <div class="carrousel">
+            {% for technology in technologies %}
+            <div>
+                <img src="{{technology.img_url}}" alt="{{technology.name}}'s logo">
+                <h3>{{technology.name}}</h3>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="divider"></div>
+        {% for project in projects %}
+        <div class="card">
+            <div class="cardHeader">
+                <h2 class="name">{{project.name}}</h2>
+                <h3 class="category">{{project.category}}</h3>
+            </div>
+            
+            <img src="{{project.screenshot}}" alt="{{project.name}} screenshot" />
+            
+            <p class="description">{{project.description}}</p>
+            <div class="urls">
+                <a href="{{ project.url }}">Project URL</a>
+                <a href="{{ project.repo_url }}">Project Repo URL</a>
+            </div>
+            <div class="technologies">
+                {% for technology in project.technologies %}
+                <span>#{{technology}}</span>
+                {% endfor %}
+            </div>
+        </div>
         {% endfor %}
-    </div>
-</div>
+    </section>
+</main>
 
-{% endfor %}
+<footer></footer>
 
 {% endblock %}

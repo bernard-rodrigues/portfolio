@@ -1,68 +1,112 @@
 {
     "data": {
+        "bio": ["🎓 I graduated in Computational Engineering from the Federal University of Juiz de Fora (UFJF) in 2019. Due to the Covid-19 pandemic, I only started my professional career in 2022 as a developer at UFJF’s Distance Education Center (CEAD | UFJF), working on e-learning systems with a Django backend and a React frontend. In 2023, I took on the role of E-learning Platform Administrator at the Center for Public Policies and Education Assessment (CAEd), a UFJF foundation, where I still work today.", "🎮 I’m passionate about game development and love participating in the Global Game Jam every year, as well as smaller jams whenever possible. 🎶 In my free time, I play the piano and stream on Twitch!"],
+        "technologies": [
+            {
+                "name": "Bootstrap",
+                "img_url": "./assets/images/bootstrap.png"
+            },
+            {
+                "name": "Django",
+                "img_url": "./assets/images/django.png"
+            },
+            {
+                "name": "JQuery",
+                "img_url": "./assets/images/jquery.svg"
+            },
+            {
+                "name": "ReactJS",
+                "img_url": "./assets/images/react.png"
+            },
+            {
+                "name": "SASS",
+                "img_url": "./assets/images/sass.png"
+            },
+            {
+                "name": "Styled-Components",
+                "img_url": "./assets/images/styled_components.png"
+            },
+            {
+                "name": "TailwindCSS",
+                "img_url": "./assets/images/tailwindCSS.png"
+            },
+            {
+                "name": "Python",
+                "img_url": "./assets/images/python.svg"
+            }
+        ],
         "projects": [
             {
                 "name": "Torch Legend",
                 "description": "A fully HTML, CSS and JS horror game",
                 "url": "https://bernard-rodrigues.github.io/torch-legend/",
                 "repo_url": "https://github.com/bernard-rodrigues/torch-legend",
-                "category": "game"
+                "category": "game",
+                "technologies": ["HTML", "CSS", "Javascript"]
             },
             {
                 "name": "Just an extra fancy checkbox",
                 "description": "Self-explained",
                 "url": "https://bernard-rodrigues.github.io/just-an-extra-fancy-checkbox/",
                 "repo_url": "https://github.com/bernard-rodrigues/just-an-extra-fancy-checkbox",
-                "category": "frontend"
+                "category": "frontend",
+                "technologies": ["HTML", "CSS", "Javascript"]
             },
             {
                 "name": "UO Realtime Chat",
                 "description": "A simple implementation of a realtime chat for synchronous multiple users",
                 "url": "https://uo-realtimechat.web.app",
                 "repo_url": "https://github.com/bernard-rodrigues/realtimechat",
-                "category": "fullstack"
+                "category": "fullstack",
+                "technologies": ["React", "Typescript", "TailwindCSS"]
             },
             {
                 "name": "Lantern Legend",
                 "description": "A small survivor horror 8-bit style game with global score system",
                 "url": "https://lantern-legend.web.app",
                 "repo_url": "https://github.com/bernard-rodrigues/lantern-legend",
-                "category": "game"
+                "category": "game",
+                "technologies": ["React", "Typescript", "TailwindCSS"]
             },
             {
                 "name": "Frontend Mentor: Interactive Rating Component",
                 "description": "My implementation of Frontend Mentor's Interactive Rating Component Challenge",
                 "url": "https://frontendmentor-interactive-rating-component-five.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-interactive-rating-component",
-                "category": "frontend"
+                "category": "frontend",
+                "technologies": ["SASS"]
             },
             {
                 "name": "Frontend Mentor: URL Shortening API",
                 "description": "My implementation of Frontend Mentor's URL Shortening API Challenge",
                 "url": "https://frontend-mentor-url-shortening-api-eight.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-url-shortening-api",
-                "category": "frontend"
+                "category": "frontend",
+                "technologies": ["React", "Axios", "Styled-Components"]
             },
             {
                 "name": "Frontend Mentor: Results Summary Component",
                 "description": "My implementation of Frontend Mentor's Results Summary Component Challenge",
                 "url": "https://frontend-mentor-results-summary-component-main.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-results-summary-component-main",
-                "category": "frontend"
+                "category": "frontend",
+                "technologies": ["SASS", "JQuery"]
             },
             {
                 "name": "Frontend Mentor: Static Job Listings",
                 "description": "My implementation of Frontend Mentor's Job Listings with filtering Challenge",
                 "url": "https://frontendmentor-static-job-listings-sooty.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/frontendmentor-static-job-listings",
-                "category": "frontend"
+                "category": "frontend",
+                "technologies": ["React", "Typescript", "TailwindCSS"]
             },
             {
                 "name": "Frontend Mentor: 3-Column Preview Card Component",
                 "description": "My implementation of Frontend Mentor's 3-Column Preview Card Component Challenge",
                 "url": "https://frontendmentor-3column-preview-card-component.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/frontendmentor-3column-preview-card-component",
-                "category": "frontend"
+                "category": "frontend",
+                "technologies": ["HTML", "CSS", "Javascript"]
             },
             {
                 "name": "Frontend Mentor: NFT Preview Card Component",
@@ -99,7 +143,7 @@
             {
                 "name": "Global Game Jam 2023: Seed",
                 "description": "Game created by me during 2023's Global Game Jam. Theme: Seed",
-                "url": "seed-77f2c.web.app/",
+                "url": "https://seed-77f2c.web.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/GGJ2023-Game---Seed/tree/main",
                 "category": "game",
                 "technologies": ["React", "Typescript", "TailwindCSS"]
