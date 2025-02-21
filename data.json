@@ -1,6 +1,38 @@
 {
     "data": {
         "bio": ["🎓 I graduated in Computational Engineering from the Federal University of Juiz de Fora (UFJF) in 2019. Due to the Covid-19 pandemic, I only started my professional career in 2022 as a developer at UFJF’s Distance Education Center (CEAD | UFJF), working on e-learning systems with a Django backend and a React frontend. In 2023, I took on the role of E-learning Platform Administrator at the Center for Public Policies and Education Assessment (CAEd), a UFJF foundation, where I still work today.", "🎮 I’m passionate about game development and love participating in the Global Game Jam every year, as well as smaller jams whenever possible. 🎶 In my free time, I play the piano and stream on Twitch!"],
+        "contacts": [
+            {
+                "name": "Phone",
+                "display_name": "+55 32 99976 7274",
+                "url": "https://wa.me/5532999767274",
+                "img": "./assets/images/phone.svg"
+            },
+            {
+                "name": "LinkedIn",
+                "display_name": "@bernard-rodrigues",
+                "url": "https://linkedin.com/in/bernard-rodrigues",
+                "img": "./assets/images/linkedin.svg"
+            },
+            {
+                "name": "Github",
+                "display_name": "@bernard-rodrigues",
+                "url": "https://github.com/bernard-rodrigues",
+                "img": "./assets/images/github.svg"
+            },
+            {
+                "name": "Instagram",
+                "display_name": "@bernard_clint",
+                "url": "https://instagram.com/bernard_clint",
+                "img": "./assets/images/instagram.svg"
+            },
+            {
+                "name": "Twitch",
+                "display_name": "@bernardin_gameplay",
+                "url": "https://twitch.tv/bernardin_gameplay/",
+                "img": "./assets/images/twitch.svg"
+            }
+        ],
         "technologies": [
             {
                 "name": "Bootstrap",

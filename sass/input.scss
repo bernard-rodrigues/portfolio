@@ -89,98 +89,185 @@ h1, h2{
     }
 }
 
-.carrousel{
-    overflow-x: scroll;
+#carousel-container{
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
+    align-items: center;
+    position: relative;
+    
+    #carousel{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+        white-space: nowrap;
+        padding: 1rem 0;
+    
+        .carousel-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            white-space: wrap;
+            position: relative;
+            z-index: 1;
+    
+            height: 4.5rem;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: $darkerPurple;
+            gap: 0.125rem;
+            border: solid $darkPurple 1px;
+
+            transition: transform 0.3s, background-color 0.3s, border 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+                background-color: $darkPurple;
+                border: solid $mediumPurple 1px;
+                z-index: 2;
+            }
+    
+            img{
+                height: 1.5rem;
+                width: 1.5rem;
+                object-fit: contain;
+            }
+    
+            span{
+                font-size: 0.5rem;
+                text-align: center;
+                color: $white;
+                font-weight: 200;
+            }
+        }
+        
+    }
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .projectCard{
+        background-image: linear-gradient(to right, $darkerPurple, $darkPurple);
+        padding: 1rem 0.75rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+    
+        .cardHeader{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+    
+            .name{
+                color: $white;
+                font-size: 1.5rem;
+                margin: 0;
+                line-height: 1.5rem;
+            }
+    
+            .category{
+                margin: 0;
+                color: $lighterPurple;
+                font-style: italic;
+            }
+        }
+    
+        img{
+            width: 100%;
+        }
+    
+        .urls{
+            display: flex;
+            justify-content: space-between;
+    
+            a{
+                padding: 0.5rem 1rem;
+                transition: filter 0.3s;
+                font-size: 0.75rem;
+    
+                &:hover{
+                    filter: brightness(105%);
+                }
+    
+                &:first-child{
+                    background-image: linear-gradient(to right, $lightPurple, $lighterPurple);
+                    color: $darkerPurple;
+                }
+                
+                &:last-child{
+                    background-image: linear-gradient(to right, $darkerPurple, $black);
+                    color: $white;
+                }
+            }
+        }
+    
+        .description{
+            color: $lightPurple;
+            font-size: 0.75rem;
+        }
+    
+        .technologies{
+            display: flex;
+            justify-content: end;
+            gap: 0.5rem;
+    
+            span{
+                border: solid $lighterPurple 1px;
+                color: $lighterPurple;
+                padding: 0 0.25rem;
+                font-size: 0.75rem;
+    
+            }
+        }
+    }
+    
+    #show-more{
+        background-image: linear-gradient(to right, $lightPurple, $lighterPurple);
+        color: $darkerPurple;
+        padding: 0.5rem 1rem;
+        transition: filter 0.3s;
+        font-size: 0.75rem;
+
+        &:hover{
+            filter: brightness(105%);
+        }
+    }
+}
+
+#get-in-touch{
+    background-color: black;
+    color: $white;
+    padding: 1rem;
+    font-weight: 200;
+    margin-top: 2rem;
+    
+    .title{
+        font-family: $bebas;
+        color: $lighterPurple;
+        font-size: 2rem;
+    }
 
     div{
         display: flex;
         flex-direction: column;
-        align-items: center;
-
-        img{
-            height: 2rem;
-            width: 2rem;
-            object-fit: contain;
-        }
-    }
-    
-}
-
-.card{
-    background-image: linear-gradient(to right, $darkerPurple, $darkPurple);
-    padding: 1rem 0.75rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-
-    .cardHeader{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-
-        .name{
-            color: $white;
-            font-size: 1.5rem;
-            margin: 0;
-            line-height: 1.5rem;
-        }
-
-        .category{
-            margin: 0;
-            color: $lighterPurple;
-            font-style: italic;
-        }
-    }
-
-    img{
-        width: 100%;
-    }
-
-    .urls{
-        display: flex;
-        justify-content: space-between;
-
-        a{
-            padding: 0.5rem 1rem;
-            transition: filter 0.3s;
-            font-size: 0.75rem;
-
-            &:hover{
-                filter: brightness(105%);
-            }
-
-            &:first-child{
-                background-image: linear-gradient(to right, $lightPurple, $lighterPurple);
-                color: $darkerPurple;
-            }
-            
-            &:last-child{
-                background-image: linear-gradient(to right, $darkerPurple, $black);
-                color: $white;
-            }
-        }
-    }
-
-    .description{
-        color: $lightPurple;
-        font-size: 0.75rem;
-    }
-
-    .technologies{
-        display: flex;
-        justify-content: end;
         gap: 0.5rem;
 
-        span{
-            border: solid $lighterPurple 1px;
-            color: $lighterPurple;
-            padding: 0 0.25rem;
-            font-size: 0.75rem;
+        a{
+            text-decoration: none;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
 
+            span{
+                font-size: 0.75rem;
+            }
         }
     }
 }

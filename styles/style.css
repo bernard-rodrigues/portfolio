@@ -66,83 +66,158 @@ h1, h2 {
   font-weight: 200;
 }
 
-.carrousel {
-  overflow-x: scroll;
+#carousel-container {
+  width: 100%;
+  overflow-x: hidden;
   display: flex;
+  align-items: center;
+  position: relative;
 }
-.carrousel div {
+#carousel-container #carousel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  white-space: nowrap;
+  padding: 1rem 0;
+}
+#carousel-container #carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: wrap;
+  position: relative;
+  z-index: 1;
+  height: 4.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #231942;
+  gap: 0.125rem;
+  border: solid #5e548e 1px;
+  transition: transform 0.3s, background-color 0.3s, border 0.3s;
+}
+#carousel-container #carousel .carousel-item:hover {
+  transform: scale(1.1);
+  background-color: #5e548e;
+  border: solid #9f86c0 1px;
+  z-index: 2;
+}
+#carousel-container #carousel .carousel-item img {
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit: contain;
+}
+#carousel-container #carousel .carousel-item span {
+  font-size: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+
+#projects {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.carrousel div img {
-  height: 2rem;
-  width: 2rem;
-  object-fit: contain;
-}
-
-.card {
+#projects .projectCard {
   background-image: linear-gradient(to right, #231942, #5e548e);
   padding: 1rem 0.75rem;
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
 }
-.card .cardHeader {
+#projects .projectCard .cardHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
-.card .cardHeader .name {
+#projects .projectCard .cardHeader .name {
   color: #fff;
   font-size: 1.5rem;
   margin: 0;
   line-height: 1.5rem;
 }
-.card .cardHeader .category {
+#projects .projectCard .cardHeader .category {
   margin: 0;
   color: #e0b1cb;
   font-style: italic;
 }
-.card img {
+#projects .projectCard img {
   width: 100%;
 }
-.card .urls {
+#projects .projectCard .urls {
   display: flex;
   justify-content: space-between;
 }
-.card .urls a {
+#projects .projectCard .urls a {
   padding: 0.5rem 1rem;
   transition: filter 0.3s;
   font-size: 0.75rem;
 }
-.card .urls a:hover {
+#projects .projectCard .urls a:hover {
   filter: brightness(105%);
 }
-.card .urls a:first-child {
+#projects .projectCard .urls a:first-child {
   background-image: linear-gradient(to right, #be95c4, #e0b1cb);
   color: #231942;
 }
-.card .urls a:last-child {
+#projects .projectCard .urls a:last-child {
   background-image: linear-gradient(to right, #231942, #000);
   color: #fff;
 }
-.card .description {
+#projects .projectCard .description {
   color: #be95c4;
   font-size: 0.75rem;
 }
-.card .technologies {
+#projects .projectCard .technologies {
   display: flex;
   justify-content: end;
   gap: 0.5rem;
 }
-.card .technologies span {
+#projects .projectCard .technologies span {
   border: solid #e0b1cb 1px;
   color: #e0b1cb;
   padding: 0 0.25rem;
+  font-size: 0.75rem;
+}
+#projects #show-more {
+  background-image: linear-gradient(to right, #be95c4, #e0b1cb);
+  color: #231942;
+  padding: 0.5rem 1rem;
+  transition: filter 0.3s;
+  font-size: 0.75rem;
+}
+#projects #show-more:hover {
+  filter: brightness(105%);
+}
+
+#get-in-touch {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+#get-in-touch .title {
+  font-family: "Bebas Neue", serif;
+  color: #e0b1cb;
+  font-size: 2rem;
+}
+#get-in-touch div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#get-in-touch div a {
+  text-decoration: none;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+#get-in-touch div a span {
   font-size: 0.75rem;
 }
 

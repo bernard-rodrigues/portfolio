@@ -56,7 +56,8 @@ def main(screenshotting=False):
         "name": "Bernard Rodrigues",
         "technologies": json_data["technologies"],
         "bio": json_data['bio'],
-        "projects": json_data['projects']
+        "projects": json_data['projects'],
+        "contacts": json_data['contacts']
     }
 
     # Render the template with the provided data

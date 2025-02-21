@@ -26,13 +26,21 @@
     <section id="technologies">
         <h2 class="title">Technologies</h2>
         <div class="divider"></div>
-        <div class="carrousel">
-            {% for technology in technologies %}
-            <div>
-                <img src="{{technology.img_url}}" alt="{{technology.name}}'s logo">
-                <h3>{{technology.name}}</h3>
+        <div id="carousel-container">
+            <div id="carousel">
+                {% for technology in technologies %}
+                <div class="carousel-item">
+                    <img src="{{technology.img_url}}" alt="{{technology.name}}'s logo">
+                    <span>{{technology.name}}</span>
+                </div>
+                {% endfor %}
+                {% for technology in technologies %} {# Duplicated for continnuous loop #}
+                <div class="carousel-item">
+                    <img src="{{technology.img_url}}" alt="{{technology.name}}'s logo">
+                    <span>{{technology.name}}</span>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </section>
 
@@ -40,7 +48,7 @@
         <h2 class="title">Projects</h2>
         <div class="divider"></div>
         {% for project in projects %}
-        <div class="card">
+        <div class="projectCard">
             <div class="cardHeader">
                 <h2 class="name">{{project.name}}</h2>
                 <h3 class="category">{{project.category}}</h3>
@@ -60,9 +68,23 @@
             </div>
         </div>
         {% endfor %}
+        <button type="button" id="show-more">Show more</button>
     </section>
 </main>
 
-<footer></footer>
+<footer id="get-in-touch">
+    <h2 class="title">Get in touch</h2>
+    <div>
+        {% for contact in contacts %}
+        <a href="{{contact.url}}" target="_blank">
+            <img src="{{contact.img}}" alt="Link to Bernard's {{contact.name}}">
+            <span>{{contact.display_name}}</span>
+        </a>
+        {% endfor %}
+    </div>
+
+</footer>
+
+<script src="./scripts.js"></script>
 
 {% endblock %}

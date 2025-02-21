@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel</title>
+    <style>
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid black;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .carousel {
+            display: flex;
+            gap: 10px;
+            white-space: nowrap;
+            position: relative;
+        }
+        .carousel-item {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const carousel = document.getElementById("carousel");
+            const items = Array.from({ length: 10 }, (_, i) => i + 1);
+            
+            function renderItems() {
+                carousel.innerHTML = "";
+                items.forEach(item => {
+                    const div = document.createElement("div");
+                    div.classList.add("carousel-item");
+                    div.textContent = item;
+                    carousel.appendChild(div);
+                });
+                // Duplicamos apenas uma vez
+                items.forEach(item => {
+                    const div = document.createElement("div");
+                    div.classList.add("carousel-item");
+                    div.textContent = item;
+                    carousel.appendChild(div);
+                });
+            }
+            
+            renderItems();
+            
+            let position = 0;
+            const speed = 1;
+            const itemWidth = 90; // Largura do item + gap
+            const totalWidth = itemWidth * items.length;
+            
+            function moveCarousel() {
+                position -= speed;
+                if (Math.abs(position) >= totalWidth) {
+                    position = 0; // Reinicia a posição
+                }
+                carousel.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(moveCarousel);
+            }
+            
+            moveCarousel();
+        });
+    </script>
+</body>
+</html>
