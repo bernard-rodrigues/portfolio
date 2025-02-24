@@ -16,7 +16,7 @@ const handleCarousel = () => {
     const moveCarousel = () => {
         if(!isPaused){
             position -= speed;
-            if(Math.abs(position) >= blockWidth){
+            if(Math.abs(position) >= blockWidth + 4){
                 position = 0;
             }
             carousel.style.transform = `translateX(${position}px)`;
