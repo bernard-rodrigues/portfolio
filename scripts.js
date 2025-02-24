@@ -1,4 +1,5 @@
 let projectsShown = 3;
+const projectsToAdd = projectsShown;
 
 const showMore = document.getElementById("show-more");
 const projectCards = document.getElementsByClassName("projectCard");
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     handleProjectsDisplay();
 
     showMore.addEventListener("click", () => {
-        projectsShown+=4;
+        projectsShown+=projectsToAdd;
         handleProjectsDisplay();
         if(projectsShown >= projectCards.length){
             showMore.style.display = "none";

@@ -54,6 +54,7 @@ h1, h2 {
   padding: 1rem;
   gap: 1rem;
   background-color: #231942;
+  border-radius: 0.25rem;
 }
 .bio div {
   display: flex;
@@ -118,7 +119,6 @@ h1, h2 {
 #projects {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 #projects .projectCard {
   background-image: linear-gradient(to right, #231942, #5e548e);
