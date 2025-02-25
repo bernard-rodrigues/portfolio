@@ -1,0 +1,30 @@
+<section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="divider"></div>
+    <div id="projects-container">
+        {% for project in projects %}
+        <div class="projectCard">
+            <div class="cardHeader">
+                <h2 class="name">{{project.name}}</h2>
+                <h3 class="category">{{project.category}}</h3>
+            </div>
+            
+            <img src="{{project.screenshot}}" alt="{{project.name}} screenshot" />
+            
+            <p class="description">{{project.description}}</p>
+            <div class="urls">
+                <a href="{{ project.url }}" target="_blank">Project URL</a>
+                <a href="{{ project.repo_url }}" target="_blank">Project Repo URL</a>
+            </div>
+            <div class="technologies">
+                {% for technology in project.technologies %}
+                <span>#{{technology}}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="buttonContainer">
+        <button type="button" id="show-more">Show more</button>
+    </div>
+</section>

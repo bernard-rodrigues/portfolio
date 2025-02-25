@@ -5,6 +5,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 # Import BeautifulSoup to format the HTML output
 from bs4 import BeautifulSoup
 
+# Import selenium to screenshot capture
 import time
 from selenium import webdriver
 

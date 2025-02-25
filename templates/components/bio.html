@@ -1,0 +1,12 @@
+<section id="bio">
+    <h2 class="title">My Carreer</h2>
+    <div class="divider"></div>
+    <div class="bio">
+        <img src="./assets/images/BernardRodrigues.jpg" alt="Bernard's picture">
+        <div>
+            {% for paragraph in bio %}
+            <p>{{paragraph}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -10,80 +10,14 @@
 </header>
 
 <main>
-    <section id="bio">
-        <h2 class="title">My Carreer</h2>
-        <div class="divider"></div>
-        <div class="bio">
-            <img src="./assets/images/BernardRodrigues.jpg" alt="Bernard's picture">
-            <div>
-                {% for paragraph in bio %}
-                <p>{{paragraph}}</p>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
+    {% include "./components/bio.html" %}
 
-    <section id="technologies">
-        <h2 class="title">Technologies</h2>
-        <div class="divider"></div>
-        <div id="carousel-container">
-            <div id="carousel">
-                {% for technology in technologies %}
-                <div class="carousel-item">
-                    <img src="{{technology.img_url}}" alt="{{technology.name}}'s logo">
-                    <span>{{technology.name}}</span>
-                </div>
-                {% endfor %}
-                {% for technology in technologies %} {# Duplicated for continnuous loop #}
-                <div class="carousel-item">
-                    <img src="{{technology.img_url}}" alt="{{technology.name}}'s logo">
-                    <span>{{technology.name}}</span>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
+    {% include "./components/technologies.html" %}
 
-    <section id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="divider"></div>
-        {% for project in projects %}
-        <div class="projectCard">
-            <div class="cardHeader">
-                <h2 class="name">{{project.name}}</h2>
-                <h3 class="category">{{project.category}}</h3>
-            </div>
-            
-            <img src="{{project.screenshot}}" alt="{{project.name}} screenshot" />
-            
-            <p class="description">{{project.description}}</p>
-            <div class="urls">
-                <a href="{{ project.url }}">Project URL</a>
-                <a href="{{ project.repo_url }}">Project Repo URL</a>
-            </div>
-            <div class="technologies">
-                {% for technology in project.technologies %}
-                <span>#{{technology}}</span>
-                {% endfor %}
-            </div>
-        </div>
-        {% endfor %}
-        <button type="button" id="show-more">Show more</button>
-    </section>
+    {% include "./components/projects.html" %}
 </main>
 
-<footer id="get-in-touch">
-    <h2 class="title">Get in touch</h2>
-    <div>
-        {% for contact in contacts %}
-        <a href="{{contact.url}}" target="_blank">
-            <img src="{{contact.img}}" alt="Link to Bernard's {{contact.name}}">
-            <span>{{contact.display_name}}</span>
-        </a>
-        {% endfor %}
-    </div>
-
-</footer>
+{% include "./components/get_in_touch.html" %}
 
 <script src="./scripts.js"></script>
 
