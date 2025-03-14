@@ -55,6 +55,7 @@ def main(screenshotting=False):
     # Define the data dictionary to pass variables into the template
     data = {
         "name": "Bernard Rodrigues",
+        "work_experience": json_data["work_experience"],
         "technologies": json_data["technologies"],
         "bio": json_data['bio'],
         "projects": json_data['projects'],

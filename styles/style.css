@@ -67,6 +67,45 @@ h1, h2 {
   font-weight: 200;
 }
 
+#work-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#work-experience-container .workCard .workStart, #work-experience-container .workCard .workEnd {
+  color: #9f86c0;
+  font-weight: 500;
+}
+#work-experience-container .workCard .workDescription {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  padding-bottom: 1rem;
+}
+#work-experience-container .workCard .workDescription .verticalDivider {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  margin: 0 1rem 0 0.5rem;
+  background-image: linear-gradient(to bottom, #231942, #e0b1cb);
+}
+#work-experience-container .workCard .workDescription div {
+  margin-left: 1.75rem;
+}
+#work-experience-container .workCard .workDescription div .company {
+  color: #be95c4;
+  font-size: 1.125rem;
+}
+#work-experience-container .workCard .workDescription div .role {
+  color: #e0b1cb;
+}
+#work-experience-container .workCard .workDescription div p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
 #carousel-container {
   width: 100%;
   overflow-x: hidden;
@@ -172,17 +211,6 @@ h1, h2 {
   color: #be95c4;
   font-size: 0.75rem;
 }
-#projects #projects-container .projectCard .technologies {
-  display: flex;
-  justify-content: end;
-  gap: 0.5rem;
-}
-#projects #projects-container .projectCard .technologies span {
-  border: solid #e0b1cb 1px;
-  color: #e0b1cb;
-  padding: 0 0.25rem;
-  font-size: 0.75rem;
-}
 #projects .buttonContainer {
   display: flex;
   justify-content: center;
@@ -196,6 +224,19 @@ h1, h2 {
 }
 #projects .buttonContainer #show-more:hover {
   filter: brightness(105%);
+}
+
+.technologies {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+.technologies span {
+  border: solid #e0b1cb 1px;
+  color: #e0b1cb;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
 #get-in-touch {

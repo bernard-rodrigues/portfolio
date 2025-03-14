@@ -90,6 +90,54 @@ h1, h2{
     }
 }
 
+#work-experience-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .workCard{
+        .workStart, .workEnd{
+            color: $mediumPurple;
+            font-weight: 500;
+        }
+
+        .workDescription{
+            display: flex;
+            align-items: stretch;
+            position: relative;
+            padding-bottom: 1rem;
+
+            .verticalDivider{
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                margin: 0 1rem 0 0.5rem;
+                
+                background-image: linear-gradient(to bottom, $darkerPurple, $lighterPurple);
+            }
+
+            div{
+                margin-left: 1.75rem;
+                .company{
+                    color: $lightPurple;
+                    font-size: 1.125rem;
+                }
+
+                .role{
+                    color: $lighterPurple;
+                }
+    
+                p{
+                    color: $white;
+                    font-weight: 200;
+                    font-size: 1rem;
+                    margin: 0.75rem 0;
+                }
+            }
+        }
+    }
+}
+
 #carousel-container{
     width: 100%;
     overflow-x: hidden;
@@ -214,20 +262,6 @@ h1, h2{
                 color: $lightPurple;
                 font-size: 0.75rem;
             }
-        
-            .technologies{
-                display: flex;
-                justify-content: end;
-                gap: 0.5rem;
-        
-                span{
-                    border: solid $lighterPurple 1px;
-                    color: $lighterPurple;
-                    padding: 0 0.25rem;
-                    font-size: 0.75rem;
-        
-                }
-            }
         }
     }
 
@@ -246,6 +280,20 @@ h1, h2{
                 filter: brightness(105%);
             }
         }
+    }
+}
+
+.technologies{
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+
+    span{
+        border: solid $lighterPurple 1px;
+        color: $lighterPurple;
+        padding: 0 0.25rem;
+        font-size: 0.75rem;
+        font-weight: 300;
     }
 }
 

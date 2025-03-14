@@ -1,0 +1,27 @@
+<section id="work-experience">
+    <h2 class="title">Work Experience</h2>
+    <div class="divider"></div>
+    <div id="work-experience-container">
+        {% for work in work_experience %}
+        <div class="workCard">
+            <p class="workStart">{{work.work_start}}</p>
+            
+            <div class="workDescription">
+                <div class="verticalDivider"></div>
+                <div>
+                    <h3 class="company">{{work.company}}</h3>
+                    <h4 class="role">{{work.role}}</h4>
+                    <p>{{work.description}}</p>
+                    <div class="technologies">
+                        {% for technology in work.technologies %}
+                        <span>{{technology}}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <p class="workEnd">{{work.work_end}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
