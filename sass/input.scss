@@ -528,4 +528,58 @@ h1, h2{
             font-size: 0.75rem;
         }
     }
+
+    #carousel-container{
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+        mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+        
+        #carousel{
+            gap: 1rem;
+            
+            .carousel-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                white-space: wrap;
+                position: relative;
+                z-index: 1;
+        
+                height: 6rem;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: $darkerPurple;
+                gap: 0.125rem;
+                border: solid $darkPurple 1px;
+    
+                transition: transform 0.3s, background-color 0.3s, border 0.3s;
+    
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: $darkPurple;
+                    border: solid $mediumPurple 1px;
+                    z-index: 2;
+                }
+        
+                img{
+                    height: 1.5rem;
+                    width: 1.5rem;
+                    object-fit: contain;
+                }
+        
+                span{
+                    font-size: 0.75rem;
+                    text-align: center;
+                    color: $white;
+                    font-weight: 200;
+                }
+            }
+            
+        }
+    }
 }
