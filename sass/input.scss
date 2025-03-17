@@ -22,7 +22,6 @@ body{
 
 
 main{
-    width: 100vw !important;
     padding: 1rem;
 
     section{
@@ -76,6 +75,12 @@ h1, h2{
     gap: 1rem;
     background-color: $darkerPurple;
     border-radius: 0.25rem;
+
+    img{
+
+        max-width: 100%;
+        height: auto;
+    }
 
     div{
         display: flex;
@@ -230,7 +235,8 @@ h1, h2{
             }
         
             img{
-                width: 100%;
+                max-width: 100%;
+                height: auto;
             }
         
             .urls{
