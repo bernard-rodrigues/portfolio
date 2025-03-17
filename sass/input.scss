@@ -9,6 +9,8 @@ $mediumPurple: #9f86c0;
 $lightPurple: #be95c4;
 $lighterPurple: #e0b1cb;
 
+$darkBlue: #000030;
+
 $white: #fff;
 $black: #000;
 
@@ -17,7 +19,7 @@ $black: #000;
 }
 
 body{
-    background-image: linear-gradient(to right, $black, $darkerPurple, $black);
+    background-image: linear-gradient(to right, $black, $darkBlue, $black);
 }
 
 
@@ -149,6 +151,8 @@ h1, h2{
     display: flex;
     align-items: center;
     position: relative;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
     
     #carousel{
         display: flex;
@@ -330,6 +334,198 @@ h1, h2{
             span{
                 font-size: 0.75rem;
             }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    main{
+        padding: 4rem;
+    }
+
+    #projects{
+        #projects-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+ 
+            .projectCard{
+                width: calc(50% - 0.5rem);
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .bio{
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2rem;
+    
+        img{
+            max-width: 50%;
+            mask-image: linear-gradient(to right, transparent 0%, black 50%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%); /* For Safari and older Chrome */
+        }
+    
+        div{
+            p{
+                font-size: 1.2rem;  
+            }
+        }
+    }
+
+    #work-experience-container{
+        .workCard{
+            .workStart, .workEnd{
+                font-size: 1.2rem;
+            }
+    
+            .workDescription{
+                div{
+                    margin-left: 2rem;
+                    .company{
+                        font-size: 1.5rem;
+                    }
+    
+                    .role{
+                        font-size: 1.2rem;
+                    }
+        
+                    p{
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .technologies{
+        span{
+            font-size: 1rem;
+        }
+    }
+
+    #projects{
+        #projects-container{          
+            .projectCard{
+                padding: 1.5rem;
+
+                .cardHeader{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 2rem;
+            
+                    .name{
+                        font-size: 2rem;
+                    }
+            
+                    .category{
+                        font-size: 1.2rem;
+                    }
+                }
+                
+                .description{
+                    font-size: 1rem;
+                }
+
+                .urls{           
+                    a{
+                        padding: 0.5rem 1rem;
+                        transition: filter 0.3s;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .buttonContainer{
+            #show-more{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #get-in-touch{
+        padding: 2rem 4rem;
+    
+        div{
+            a{
+                text-decoration: none;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+    
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    main{
+        padding: 10rem;
+    
+        section{
+            .title{
+                font-size: 2.5rem;
+            }
+    
+            .divider{
+                height: 2px;
+            }
+        }
+    }
+    
+    header{
+        margin-top: 5rem;
+    
+        h1{
+            font-size: 5rem;
+            line-height: 4rem;
+        }
+    
+        h2{
+            font-size: 2.5rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    #projects{
+        #projects-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+ 
+            .projectCard{
+                width: calc(33.33% - 0.666rem);
+                flex-grow: 1;
+
+                .cardHeader{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 2rem;
+            
+                    .name{
+                        color: $white;
+                        margin: 0;
+                        line-height: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .technologies{
+        flex-wrap: wrap;
+    
+        span{
+            font-size: 0.75rem;
         }
     }
 }
