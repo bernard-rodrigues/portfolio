@@ -297,6 +297,7 @@ h1, h2{
     display: flex;
     justify-content: end;
     gap: 0.5rem;
+    flex-wrap: wrap;
 
     span{
         border: solid $lighterPurple 1px;
