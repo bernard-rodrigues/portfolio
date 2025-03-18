@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const carousel = document.getElementById("carousel");
         
         // Resetar o carrossel ao estado inicial
-        carousel.style.transform = "translateX(0)";
+        if(carousel){
+            carousel.style.transform = "translateX(0)";
+        }
         
         // Remover clones existentes para evitar duplicação
         const originalItems = document.querySelectorAll(".carousel-item:not(.clone)");
@@ -109,9 +111,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    const handleComets = () => {
+        const comets = document.getElementsByClassName("comet");
+        let screenHeight = window.innerHeight;
+
+        let speeds = [Math.random()*2 + 1, Math.random()*2 + 1, Math.random()*2 + 1];
+        let positions = Array(comets.length).fill(-comets[0].offsetHeight);
+
+        const moveComets = () => {
+            Array.from(comets).forEach((comet, index) => {
+                comet.style.top = `${positions[index]}px`
+                positions[index] += speeds[index];
+                if(positions[index] >= screenHeight){
+                    speeds[index] = Math.random()*2 + 1;
+                    positions[index] = -comets[0].offsetHeight;
+                }
+            })
+
+            requestAnimationFrame(moveComets);
+        }
+        requestAnimationFrame(moveComets);
+    }
+
     // Inicializar
     handleCarousel();
     handleProjectsDisplay();
+    handleComets();
 
     showMore.addEventListener("click", () => {
         projectsShown += projectsToAdd;
