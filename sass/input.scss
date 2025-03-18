@@ -92,7 +92,7 @@ h1, h2{
 
         p{
             color: $white;
-            font-size: 1rem;
+            font-size: 0.75rem;
             font-weight: 200;
         }
     }
@@ -142,7 +142,7 @@ h1, h2{
                 p{
                     color: $white;
                     font-weight: 200;
-                    font-size: 1rem;
+                    font-size: 0.75rem;
                     margin: 0.75rem 0;
                 }
             }
@@ -254,21 +254,31 @@ h1, h2{
         
                 a{
                     padding: 0.5rem 1rem;
-                    transition: filter 0.3s;
                     font-size: 0.75rem;
-        
-                    &:hover{
-                        filter: brightness(105%);
-                    }
-        
+                    
                     &:first-child{
-                        background-image: linear-gradient(to right, $lightPurple, $lighterPurple);
+                        background-image: linear-gradient(to right, $lighterPurple, $darkPurple);
+                        background-size: 200% 200%;
+                        background-position: 0 0;
+                        transition: background-position 0.3s, transform 0.3s, color 0.3s;
                         color: $darkerPurple;
+
+                        &:hover{
+                            color: $white
+                        }
                     }
                     
                     &:last-child{
                         background-image: linear-gradient(to right, $darkerPurple, $black);
+                        background-size: 200% 200%;
+                        background-position: 0 0;
+                        transition: background-position 0.3s, transform 0.3s;
                         color: $white;
+                    }
+
+                    &:hover{
+                        background-position: 100% 100%;
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -285,14 +295,17 @@ h1, h2{
         justify-content: center;
 
         #show-more{
-            background-image: linear-gradient(to right, $lightPurple, $lighterPurple);
+            background-image: linear-gradient(to right, $lightPurple, $mediumPurple);
+            background-size: 200% 200%;
+            background-position: 0 0;
             color: $darkerPurple;
             padding: 0.5rem 1rem;
-            transition: filter 0.3s;
+            transition: background-position 0.3s, transform 0.3s;
             font-size: 0.75rem;
     
             &:hover{
-                filter: brightness(105%);
+                background-position: 100% 100%;
+                transform: scale(1.1);
             }
         }
     }
@@ -308,7 +321,7 @@ h1, h2{
         border: solid $lighterPurple 1px;
         color: $lighterPurple;
         padding: 0 0.25rem;
-        font-size: 0.75rem;
+        font-size: 0.625rem;
         font-weight: 300;
     }
 }
@@ -521,6 +534,15 @@ h1, h2{
                         color: $white;
                         margin: 0;
                         line-height: 1.75rem;
+                    }
+                }
+
+                .urls{
+                    display: flex;
+                    justify-content: space-between;
+            
+                    a{    
+                        font-size: 0.75rem;
                     }
                 }
             }
