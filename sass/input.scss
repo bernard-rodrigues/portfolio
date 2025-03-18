@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "lines.scss";
 
 $bebas: "Bebas Neue", serif;
 $poppins: "Poppins", serif;
@@ -103,6 +104,10 @@ h1, h2{
     gap: 2rem;
 
     .workCard{
+        background-color: $darkerPurple;
+        padding: 1rem;
+        border-radius: 0.25rem;
+
         .workStart, .workEnd{
             color: $mediumPurple;
             font-weight: 500;
@@ -295,6 +300,7 @@ h1, h2{
 
 .technologies{
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
     gap: 0.5rem;
 
