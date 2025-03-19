@@ -293,6 +293,17 @@
                 "repo_url": "https://github.com/bernard-rodrigues/Frontendmentor-nft-preview-card-component",
                 "category": "frontend",
                 "technologies": ["TailwindCSS"]
+            },
+            {
+                "name": "Portifolio",
+                "description": {
+                    "en": "This project. My personal portifolio.",
+                    "pt": "Este projeto. Meu portifólio pessoal."
+                },
+                "url": "http://bernard-rodrigues.github.io/portifolio",
+                "repo_url": "https://github.com/bernard-rodrigues/portifolio",
+                "category": "frontend",
+                "technologies": ["Jinja", "SASS"]
             }
         ],
         "contacts": [
