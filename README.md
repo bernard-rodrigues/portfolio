@@ -1,48 +1,123 @@
-# Jinja Boilerplate
+# Portfolio
 
-This repository provides a boilerplate for projects using Jinja templating.
+A static website portfolio showcasing my personal websites and applications with beautiful animations and dynamic content generation.
 
-## Getting Started
+## 🌟 Features
+
+- **Jinja Components** - Modular templating system for easy maintenance
+- **SASS Styling** - Advanced CSS with variables, nesting, and mixins
+- **Animations** - Interactive UI elements with custom animations
+- **Automatic Screenshots** - Python utility to capture and add website screenshots
+- **Responsive Design** - Fully responsive across desktop and mobile devices
+
+## 📂 Project Structure
+
+```
+├───assets
+│   ├───files
+│   ├───images
+│   └───screenshots
+├───sass
+├───styles
+└───templates
+    └───components
+```
+
+## 🔧 Installation
 
 ### Prerequisites
 
 - Python 3.x
-- Jinja2 library
+- Node.js and npm
 
-### Installation
+### Setup
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/bernard-rodrigues/jinja-boilerplate.git
+   ```bash
+   git clone https://github.com/bernard-rodrigues/portifolio.git
+   cd portifolio
+   ```
+
+2. Create a virtual environment:
+   ```bash
+   python -m venv .env
+   ```
+
+3. Activate you virtual environment (Windows):
+    ```pwsh
+    .\env\Scripts\activate
     ```
-2. Navigate to the project directory:
-    ```sh
-    cd jinja-boilerplate
-    ```
-3. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
 
-## Usage
+4. Activate you virtual environment (Linux/Mac):
+   ```bash
+   source ./env/bin/activate
+   ```
 
-1. Add your Jinja templates in the `templates` directory.
-2. Create a Python script to render the templates. Example:
-    ```python
-    from jinja2 import Environment, FileSystemLoader
+5. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    env = Environment(loader=FileSystemLoader('templates'))
-    template = env.get_template('your_template.html')
+6. Install Node.js dependencies:
+   ```bash
+   npm install
+   ```
 
-    output = template.render(your_variable='value')
-    print(output)
-    ```
-3. Run your script to generate the output.
+## 🚀 Usage
 
-## Contributing
+### Basic Run
 
-Contributions are welcome! Please open an issue or submit a pull request.
+To run the portfolio website locally:
 
-## License
+```bash
+python app.py
+```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This will create a static HTML file with the information provided by your `data.json` file.
+
+### Generate Screenshots
+
+To automatically capture screenshots of the websites in your portfolio and add them to the project cards:
+
+```bash
+python app.py 1
+```
+
+This will:
+1. Visit each website listed in your portfolio
+2. Capture a screenshot of each site
+3. Save them to the `assets/screenshots` directory
+4. Update the project cards with the new screenshots
+
+## 🛠️ Technologies Used
+
+- **HTML/CSS/JavaScript** - Front-end fundamentals
+- **Jinja2** - Templating engine for component-based development
+- **SASS** - CSS preprocessor for advanced styling
+- **BeautifulSoup** - For HTML formatting and parsing
+- **Python** - Backend processing and screenshot utility
+
+## 👀 Demo
+
+Check out the live demo of the portfolio at:  
+[bernard-rodrigues.github.io/portifolio](http://bernard-rodrigues.github.io/portifolio)
+
+## 📸 Screenshots
+
+![Large monitor design](./assets/screenshots/screenshot-1.png)
+
+![Mobile design](./assets/screenshots/screenshot-2.png)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/bernard-rodrigues/portifolio/issues).
+
+## 📝 License
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+
+## 📧 Contact
+
+Bernard Rodrigues - [GitHub](https://github.com/bernard-rodrigues)
+
+Project Link: [https://github.com/bernard-rodrigues/portifolio](https://github.com/bernard-rodrigues/portifolio)
