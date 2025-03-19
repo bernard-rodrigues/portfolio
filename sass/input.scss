@@ -103,6 +103,34 @@ h1, h2{
     }
 }
 
+#resume-container{
+    display: flex;
+    justify-content: center;
+
+    a{
+        padding-bottom: 0.25rem;
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red,orange,yellow,green,blue,indigo,violet);
+        background-size: 200% 200%;
+        background-position: 0 0;
+        transition: background-position 1s, transform 0.3s;
+
+        &:hover{
+            background-position: 100% 100%;
+            transform: scale(1.1);
+        }
+
+        span{
+            background-color: $black;
+            border-top: solid $white 1px;
+            border-left: solid $white 1px;
+            border-right: solid $white 1px;
+            color: $white;
+            padding: 0.25rem 0.5rem;
+            font-weight: 300;
+        }
+    }
+}
+
 .bio{
     display: flex;
     flex-direction: column;

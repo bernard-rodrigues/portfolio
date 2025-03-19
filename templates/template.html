@@ -4,10 +4,7 @@
 
 {% block content %}
 
-<button id="toggle-language">
-    <img src="./assets/images/flag-united-kingdom.png" alt="United Kingdom's Flag" class="en"><span class="en"> English</span>
-    <img src="./assets/images/flag-brazil.png" alt="Brazil's Flag" class="pt"><span class="pt"> Português</span>
-</button>
+{% include "./components/language_toggler_button.html" %}
 
 <header>
     <h1>
@@ -20,6 +17,8 @@
 
 <main>
     {% include "./components/lines.html" %}
+    
+    {% include "./components/download_resume.html" %}
     
     {% include "./components/bio.html" %}
 
