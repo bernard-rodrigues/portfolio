@@ -4,6 +4,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const showMore = document.getElementById("show-more");
     const projectCards = document.getElementsByClassName("projectCard");
+
+    const ptElements = document.getElementsByClassName("pt");
+    const enElements = document.getElementsByClassName("en");
+
+    const languageButton = document.getElementById("toggle-language");
+
+    let isEnglish = true;
+
+    const changeElementsVisualization = (isEnglish) => {
+        if(isEnglish){
+            Array.from(ptElements).forEach(element => {
+                element.style.display = "none";
+            });
+            Array.from(enElements).forEach(element => {
+                element.style.display = "block";
+            });
+        }else{
+            Array.from(ptElements).forEach(element => {
+                element.style.display = "block";
+            });
+            Array.from(enElements).forEach(element => {
+                element.style.display = "none";
+            });
+        }
+    }
+    
+    const toggleLanguage = () => {
+        isEnglish = !isEnglish;
+        changeElementsVisualization(isEnglish);
+    }
     
     // Variáveis para controle do carrossel
     let carouselInstance = null;
@@ -137,6 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     handleCarousel();
     handleProjectsDisplay();
     handleComets();
+    changeElementsVisualization(isEnglish);
 
     showMore.addEventListener("click", () => {
         projectsShown += projectsToAdd;
@@ -157,4 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
             handleCarousel();
         }, 250); // Esperar 250ms após o último evento de redimensionamento
     });
+
+    languageButton.addEventListener("click", toggleLanguage)
 });

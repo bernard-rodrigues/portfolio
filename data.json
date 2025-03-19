@@ -1,6 +1,15 @@
 {
     "data": {
-        "bio": ["🎓 I graduated in Computational Engineering from the Federal University of Juiz de Fora (UFJF) in 2019. Due to the Covid-19 pandemic, I only started my professional career in 2022 as a developer at UFJF’s Distance Education Center (CEAD | UFJF), working on e-learning systems with a Django backend and a React frontend. In 2023, I took on the role of E-learning Platform Administrator at the Center for Public Policies and Education Assessment (CAEd), a UFJF foundation, where I still work today.", "🎮 I’m passionate about game development and love participating in the Global Game Jam every year, as well as smaller jams whenever possible. 🎶 In my free time, I play the piano and stream on Twitch!"],
+        "bio": {
+            "en": [
+                "🎓 I graduated in Computational Engineering from the Federal University of Juiz de Fora (UFJF) in 2019. Due to the Covid-19 pandemic, I only started my professional career in 2022 as a developer at UFJF’s Distance Education Center (CEAD | UFJF), working on e-learning systems with a Django backend and a React frontend. In 2023, I took on the role of E-learning Platform Administrator at the Center for Public Policies and Education Assessment (CAEd), a UFJF foundation, where I still work today.",
+                "🎮 I’m passionate about game development and love participating in the Global Game Jam every year, as well as smaller jams whenever possible. 🎶 In my free time, I play the piano and stream on Twitch!"
+            ],
+            "pt": [
+                "🎓 Sou graduado em Engenharia Computacional pela Universidade Federal de Juiz de Fora (UFJF) em 2019. Devido à pandemia de Covid-19, só iniciei minha carreira profissional em 2022 como desenvolvedor no Centro de Educação a Distância da UFJF (CEAD | UFJF), trabalhando em sistemas EAD com backend em Django e frontend em React. Em 2023, assumi o papel de Administrador de Plataformas de EAD no Centro de Políticas Públicas e Avaliação da Educação (CAEd), uma fundação da UFJF, onde trabalho até hoje.",
+                "🎮 Sou apaixonado por desenvolvimento de jogos e amo participar da Global Game Jam anualmente, assim como jams menores sempre que possível. 🎶 No meu tempo livre, toco piano e faço transmissões ao vivo na Twitch!"
+            ]
+        },
         "technologies": [
             {
                 "name": "Bootstrap",
@@ -37,34 +46,73 @@
         ],
         "work_experience": [
             {
-              "company": "CódigoKid",
-              "role": "Programming Instructor",
-              "work_start": "March, 2019",
-              "work_end": "September, 2019",
-              "description": "Instructed children and teenagers in fundamental programming concepts, game development, and introductory robotics. Utilized visual programming environments like Construct 2 and 3 to teach game logic and design, Kodu for 3D game creation, and Arduino for hands-on experience with physical computing and robotics principles.",
-              "technologies": ["Construct 2", "Construct 3", "Kodu", "Arduino"]
+                "company": "CódigoKid",
+                "role": {
+                    "en": "Programming Instructor",
+                    "pt": "Instrutor de Programação"
+                },
+                "work_start": {
+                    "en": "March, 2019",
+                    "pt": "Março, 2019"
+                },
+                "work_end": {
+                    "en": "September, 2019",
+                    "pt": "Setembro, 2019"
+                },
+                "description": {
+                    "en": "Instructed children and teenagers in fundamental programming concepts, game development, and introductory robotics. Utilized visual programming environments like Construct 2 and 3 to teach game logic and design, Kodu for 3D game creation, and Arduino for hands-on experience with physical computing and robotics principles.",
+                    "pt": "Instruí crianças e adolescentes em conceitos fundamentais de programação, desenvolvimento de jogos e robótica introdutória. Utilizei ambientes de programação visual como Construct 2 e 3 para ensinar lógica e design de jogos, Kodu para criação de jogos 3D e Arduino para experiência prática com computação física e princípios de robótica."
+                },
+                "technologies": ["Construct 2", "Construct 3", "Kodu", "Arduino"]
             },
             {
-              "company": "CEAD | UFJF",
-              "role": "FullStack Django Developer",
-              "work_start": "March, 2022",
-              "work_end": "August, 2023",
-              "description": "Developed and maintained robust web applications for the Distance Education Center (CEAD|UFJF), focusing on managing student, faculty, and scholarship data. Implemented RESTful APIs using Django REST Framework for seamless data exchange between the backend (Django, PostgreSQL) and frontend (React). Contributed to the full software development lifecycle, ensuring scalable and maintainable solutions.",
-              "technologies": ["Django", "React", "DjangoREST", "PostgreSQL"]
+                "company": "CEAD | UFJF",
+                "role": {
+                    "en": "FullStack Django/React Developer",
+                    "pt": "Desenvolvedor Fullstack Django/React"
+                },
+                "work_start": {
+                    "en": "March, 2022",
+                    "pt": "Março, 2022"
+                },
+                "work_end": {
+                    "en": "August, 2023",
+                    "pt": "Agosto, 2023"
+                },
+                "description": {
+                    "en": "Developed and maintained robust web applications for the Distance Education Center (CEAD|UFJF), focusing on managing student, faculty, and scholarship data. Implemented RESTful APIs using Django REST Framework for seamless data exchange between the backend (Django, PostgreSQL) and frontend (React). Contributed to the full software development lifecycle, ensuring scalable and maintainable solutions.",
+                    "pt": "Desenvolvi e mantive aplicações web robustas para o Centro de Educação a Distância (CEAD|UFJF), com foco no gerenciamento de dados de alunos, professores e bolsas de estudo. Implementei APIs RESTful usando Django REST Framework para troca de dados contínua entre o backend (Django, PostgreSQL) e o frontend (React). Contribuí para o ciclo de vida completo do desenvolvimento de software, garantindo soluções escaláveis e de fácil manutenção."
+                },
+                "technologies": ["Django", "React", "DjangoREST", "PostgreSQL"]
             },
             {
-              "company": "CAEd | UFJF",
-              "role": "EAD Systems Assistant VI",
-              "work_start": "August, 2023",
-              "work_end": "Current day",
-              "description": "Developed and maintained PHP-based systems for the Center for Distance Education (CAEd|UFJF), adhering to coding standards for rapid and scalable development. Implemented new features and enhancements to streamline educational processes and tools. Managed and customized the Moodle Learning Management System (LMS), ensuring effective content organization, user management, and platform stability. Utilized MySQL for data management and Bootstrap for responsive frontend development.",
-              "technologies": ["PHP", "MySQL", "Bootstrap"]
+                "company": "CAEd | UFJF",
+                "role": {
+                    "en": "EAD Systems Assistant VI",
+                    "pt": "Assistente de Sistemas EAD VI"
+                },
+                "work_start": {
+                    "en": "August, 2023",
+                    "pt": "Agosto, 2023"
+                },
+                "work_end": {
+                    "en": "Current day",
+                    "pt": "Dia atual"
+                },
+                "description": {
+                    "en": "Maintained PHP-based systems for the Center for Distance Education (CAEd|UFJF), adhering to coding standards for rapid and scalable development. Implemented new features and enhancements to streamline educational processes and tools. Managed and customized the Moodle Learning Management System (LMS), ensuring effective content organization, user management, and platform stability. Utilized MySQL for data management and Bootstrap for responsive frontend development.",
+                    "pt": "Dei manutenção em sistemas baseados em PHP para o Centro de Educação a Distância (CAEd|UFJF), seguindo padrões de codificação para desenvolvimento rápido e escalável. Implementei novos recursos e melhorias para otimizar processos e ferramentas educacionais. Gerenciei e personalizei o Ambiente Virtual de Aprendizagem Moodle (AVA), garantindo a organização eficaz do conteúdo, gerenciamento de usuários e estabilidade da plataforma. Utilizei MySQL para gerenciamento de dados e Bootstrap para o desenvolvimento de frontend responsivo."
+                },
+                "technologies": ["PHP", "MySQL", "Bootstrap"]
             }
         ],
         "projects": [
             {
                 "name": "Torch Legend",
-                "description": "A fully HTML, CSS and JS horror game",
+                "description": {
+                    "en": "A fully HTML, CSS and JS horror game",
+                    "pt": "Um jogo de terror usando somente HTML, CSS e JS"
+                },
                 "url": "https://bernard-rodrigues.github.io/torch-legend/",
                 "repo_url": "https://github.com/bernard-rodrigues/torch-legend",
                 "category": "game",
@@ -72,7 +120,10 @@
             },
             {
                 "name": "UO Realtime Chat",
-                "description": "A simple implementation of a realtime chat for synchronous multiple users",
+                "description": {
+                    "en": "A simple implementation of a realtime chat for synchronous multiple users",
+                    "pt": "Uma implementação simples de um chat em tempo real para múltiplos usuários síncronos"
+                },
                 "url": "https://uo-realtimechat.web.app",
                 "repo_url": "https://github.com/bernard-rodrigues/realtimechat",
                 "category": "fullstack",
@@ -80,7 +131,10 @@
             },
             {
                 "name": "Lantern Legend",
-                "description": "A small survivor horror 8-bit style game with global score system",
+                "description": {
+                    "en": "A small survivor horror 8-bit style game with global score system",
+                    "pt": "Um pequeno jogo de terror de sobrevivência no estilo 8-bit com sistema de pontuação global"
+                },
                 "url": "https://lantern-legend.web.app",
                 "repo_url": "https://github.com/bernard-rodrigues/lantern-legend",
                 "category": "game",
@@ -88,7 +142,10 @@
             },
             {
                 "name": "Frontend Mentor: URL Shortening API",
-                "description": "My implementation of Frontend Mentor's URL Shortening API Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's URL Shortening API Challenge",
+                    "pt": "Minha implementação do desafio da API de encurtamento de URL do Frontend Mentor"
+                },
                 "url": "https://frontend-mentor-url-shortening-api-eight.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-url-shortening-api",
                 "category": "frontend",
@@ -96,7 +153,10 @@
             },
             {
                 "name": "Frontend Mentor: IP Address Tracker",
-                "description": "My implementation of Frontend Mentor's IP Address Tracker Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's IP Address Tracker Challenge",
+                    "pt": "Minha implementação do desafio de rastreamento de endereço IP do Frontend Mentor"
+                },
                 "url": "https://frontend-mentor-ip-address-tracker-iota.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-ip-address-tracker",
                 "category": "frontend",
@@ -104,7 +164,10 @@
             },
             {
                 "name": "Screenmaster App",
-                "description": "A tool to compare different screen sizes side by side",
+                "description": {
+                    "en": "A tool to compare different screen sizes side by side",
+                    "pt": "Uma ferramenta para comparar diferentes tamanhos de tela lado a lado"
+                },
                 "url": "http://screenmaster.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/screenmaster",
                 "category": "app",
@@ -112,7 +175,10 @@
             },
             {
                 "name": "Just an extra fancy checkbox",
-                "description": "Self-explained",
+                "description": {
+                    "en": "Self-explained",
+                    "pt": "Autoexplicativo"
+                },
                 "url": "https://bernard-rodrigues.github.io/just-an-extra-fancy-checkbox/",
                 "repo_url": "https://github.com/bernard-rodrigues/just-an-extra-fancy-checkbox",
                 "category": "frontend",
@@ -120,7 +186,10 @@
             },
             {
                 "name": "Global Game Jam 2023: Seed",
-                "description": "Game created by me during 2023's Global Game Jam. Theme: Seed",
+                "description": {
+                    "en": "Game created by me during 2023's Global Game Jam. Theme: Seed",
+                    "pt": "Jogo criado por mim durante a Global Game Jam de 2023. Tema: Semente"
+                },
                 "url": "https://seed-77f2c.web.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/GGJ2023-Game---Seed/tree/main",
                 "category": "game",
@@ -128,7 +197,10 @@
             },
             {
                 "name": "Guitar Highlight",
-                "description": "A web application to aid piano players on guitar study",
+                "description": {
+                    "en": "A web application to aid piano players on guitar study",
+                    "pt": "Um aplicativo web para auxiliar pianistas no estudo de violão"
+                },
                 "url": "https://guitar-highlight.web.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/ReactGuitarHighlight",
                 "category": "app",
@@ -136,7 +208,10 @@
             },
             {
                 "name": "Frontend Mentor: Rock, Scissors, Paper",
-                "description": "My implementation of Frontend Mentor's Rock, Scissors, Paper Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's Rock, Scissors, Paper Challenge",
+                    "pt": "Minha implementação do desafio de Pedra, Papel e Tesoura do Frontend Mentor"
+                },
                 "url": "https://frontend-mentor-rock-scissors-paper.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-rock-scissors-paper",
                 "category": "game",
@@ -144,7 +219,10 @@
             },
             {
                 "name": "Ekato Clock",
-                "description": "A 100-hours-based clock",
+                "description": {
+                    "en": "A 100-hours-based clock",
+                    "pt": "Um relógio baseado em 100 horas"
+                },
                 "url": "http://ekatoclock.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/ekatoclock",
                 "category": "frontend",
@@ -152,7 +230,10 @@
             },
             {
                 "name": "Frontend Mentor - REST Countries API with color theme switcher",
-                "description": "This is a solution to the REST Countries API with color theme switcher challenge",
+                "description": {
+                    "en": "This is a solution to the REST Countries API with color theme switcher challenge",
+                    "pt": "Esta é uma solução para o desafio da API REST de Países com alternador de tema de cor"
+                },
                 "url": "https://frontend-mentor-where-in-the-world.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-where-in-the-world",
                 "category": "frontend",
@@ -160,7 +241,10 @@
             },
             {
                 "name": "Frontend Mentor: Interactive Rating Component",
-                "description": "My implementation of Frontend Mentor's Interactive Rating Component Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's Interactive Rating Component Challenge",
+                    "pt": "Minha implementação do desafio de Componente de Avaliação Interativo do Frontend Mentor"
+                },
                 "url": "https://frontendmentor-interactive-rating-component-five.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-interactive-rating-component",
                 "category": "frontend",
@@ -168,7 +252,10 @@
             },
             {
                 "name": "Frontend Mentor: Results Summary Component",
-                "description": "My implementation of Frontend Mentor's Results Summary Component Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's Results Summary Component Challenge",
+                    "pt": "Minha implementação do desafio de Componente de Resumo de Resultados do Frontend Mentor"
+                },
                 "url": "https://frontend-mentor-results-summary-component-main.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/FrontendMentor-results-summary-component-main",
                 "category": "frontend",
@@ -176,7 +263,10 @@
             },
             {
                 "name": "Frontend Mentor: Static Job Listings",
-                "description": "My implementation of Frontend Mentor's Job Listings with filtering Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's Job Listings with filtering Challenge",
+                    "pt": "Minha implementação do desafio de Listagens de Empregos Estáticos com filtragem do Frontend Mentor"
+                },
                 "url": "https://frontendmentor-static-job-listings-sooty.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/frontendmentor-static-job-listings",
                 "category": "frontend",
@@ -184,7 +274,10 @@
             },
             {
                 "name": "Frontend Mentor: 3-Column Preview Card Component",
-                "description": "My implementation of Frontend Mentor's 3-Column Preview Card Component Challenge",
+                "description": {
+                    "en": "My implementation of Frontend Mentor's 3-Column Preview Card Component Challenge",
+                    "pt": "Minha implementação do desafio de Componente de Cartão de Pré-visualização de 3 Colunas do Frontend Mentor"
+                },
                 "url": "https://frontendmentor-3column-preview-card-component.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/frontendmentor-3column-preview-card-component",
                 "category": "frontend",
@@ -192,7 +285,10 @@
             },
             {
                 "name": "Frontend Mentor: NFT Preview Card Component",
-                "description": "This is a solution to the NFT preview card component challenge on Frontend Mentor",
+                "description": {
+                    "en": "This is a solution to the NFT preview card component challenge on Frontend Mentor",
+                    "pt": "Esta é uma solução para o desafio do componente de cartão de pré-visualização NFT no Frontend Mentor"
+                },
                 "url": "https://frontendmentor-nft-preview-card-component-eight.vercel.app/",
                 "repo_url": "https://github.com/bernard-rodrigues/Frontendmentor-nft-preview-card-component",
                 "category": "frontend",
@@ -201,7 +297,7 @@
         ],
         "contacts": [
             {
-                "name": "Mail",
+                "name": "Email",
                 "display_name": "bernard.silva.rodrigues@gmail.com",
                 "url": "mailto:bernard.silva.rodrigues@gmail.com",
                 "img": "./assets/images/mail.svg"

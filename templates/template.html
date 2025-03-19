@@ -4,9 +4,18 @@
 
 {% block content %}
 
+<button id="toggle-language">
+    <img src="./assets/images/flag-united-kingdom.png" alt="United Kingdom's Flag" class="en"><span class="en"> English</span>
+    <img src="./assets/images/flag-brazil.png" alt="Brazil's Flag" class="pt"><span class="pt"> Português</span>
+</button>
+
 <header>
-    <h1>Hi! I'm Bernard Rodrigues</h1>
-    <h2><span>Django/React</span><br>FullStack Developer</h2>
+    <h1>
+        <span class="en">Hi! I'm Bernard Rodrigues</span>
+        <span class="pt">Oi! Eu sou Bernard Rodrigues</span>
+    </h1>
+    <h2 class="en"><span>Django/React</span><br>FullStack Developer</h2>
+    <h2 class="pt">Desenvolvedor Fullstack<br><span>Django/React</span></h2>
 </header>
 
 <main>

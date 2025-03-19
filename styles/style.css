@@ -38,12 +38,34 @@
 
 body {
   background-image: linear-gradient(to right, #000, #000030, #000);
+  position: relative;
+  border: 1px solid transparent;
+}
+body #toggle-language {
+  color: white;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border: rgba(255, 255, 255, 0.4) solid 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+body #toggle-language img {
+  height: 1rem;
+  width: auto;
+}
+body #toggle-language span {
+  font-size: 0.625rem;
 }
 
 main {
   padding: 1rem;
 }
-main section .title {
+main section .title span {
   font-size: 2.5rem;
   color: #e0b1cb;
   margin-top: 2rem;
@@ -56,6 +78,7 @@ main section .divider {
 }
 
 header {
+  position: relative;
   text-align: center;
   margin-top: 5rem;
 }
@@ -77,6 +100,9 @@ header h2 span {
 }
 
 h1, h2 {
+  font-family: "Bebas Neue", serif;
+}
+h1 span, h2 span {
   font-family: "Bebas Neue", serif;
 }
 
@@ -250,7 +276,7 @@ h1, h2 {
   color: #fff;
 }
 #projects #projects-container .projectCard .urls a:last-child {
-  background-image: linear-gradient(to right, #231942, #000);
+  background-image: linear-gradient(to right, #000, #9f86c0);
   background-size: 200% 200%;
   background-position: 0 0;
   transition: background-position 0.3s, transform 0.3s;
@@ -269,15 +295,16 @@ h1, h2 {
   justify-content: center;
 }
 #projects .buttonContainer #show-more {
-  background-image: linear-gradient(to right, #be95c4, #9f86c0);
+  background-image: linear-gradient(to right, #e0b1cb, #5e548e);
   background-size: 200% 200%;
   background-position: 0 0;
   color: #231942;
   padding: 0.5rem 1rem;
-  transition: background-position 0.3s, transform 0.3s;
+  transition: background-position 0.3s, transform 0.3s, color 0.3s;
   font-size: 0.75rem;
 }
 #projects .buttonContainer #show-more:hover {
+  color: #fff;
   background-position: 100% 100%;
   transform: scale(1.1);
 }
@@ -303,8 +330,9 @@ h1, h2 {
   padding: 1rem;
   font-weight: 200;
   margin-top: 2rem;
+  width: 100%;
 }
-#get-in-touch .title {
+#get-in-touch .title span {
   font-family: "Bebas Neue", serif;
   color: #e0b1cb;
   font-size: 2rem;
@@ -413,7 +441,7 @@ h1, h2 {
   main {
     padding: 10rem;
   }
-  main section .title {
+  main section .title span {
     font-size: 2.5rem;
   }
   main section .divider {

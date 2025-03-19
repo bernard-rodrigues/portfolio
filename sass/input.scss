@@ -21,6 +21,31 @@ $black: #000;
 
 body{
     background-image: linear-gradient(to right, $black, $darkBlue, $black);
+    position: relative;
+    border: 1px solid transparent;
+    
+    #toggle-language{
+        color: white;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        border: #ffffff66 solid 1px;
+        background-color: #ffffff33;
+        padding: 0 0.25rem;
+        border-radius: 0.25rem;
+
+        img{
+            height: 1rem;
+            width: auto;
+        }
+
+        span{
+            font-size: 0.625rem;
+        }
+    }
 }
 
 
@@ -29,9 +54,11 @@ main{
 
     section{
         .title{
-            font-size: 2.5rem;
-            color: $lighterPurple;
-            margin-top: 2rem;
+            span{
+                font-size: 2.5rem;
+                color: $lighterPurple;
+                margin-top: 2rem;
+            }
         }
 
         .divider{
@@ -44,6 +71,7 @@ main{
 }
 
 header{
+    position: relative;
     text-align: center;
     margin-top: 5rem;
 
@@ -69,6 +97,10 @@ header{
 
 h1, h2{
     font-family: $bebas;
+
+    span{
+        font-family: $bebas;
+    }
 }
 
 .bio{
@@ -269,7 +301,7 @@ h1, h2{
                     }
                     
                     &:last-child{
-                        background-image: linear-gradient(to right, $darkerPurple, $black);
+                        background-image: linear-gradient(to right, $black, $mediumPurple);
                         background-size: 200% 200%;
                         background-position: 0 0;
                         transition: background-position 0.3s, transform 0.3s;
@@ -295,15 +327,16 @@ h1, h2{
         justify-content: center;
 
         #show-more{
-            background-image: linear-gradient(to right, $lightPurple, $mediumPurple);
+            background-image: linear-gradient(to right, $lighterPurple, $darkPurple);
             background-size: 200% 200%;
             background-position: 0 0;
             color: $darkerPurple;
             padding: 0.5rem 1rem;
-            transition: background-position 0.3s, transform 0.3s;
+            transition: background-position 0.3s, transform 0.3s, color 0.3s;
             font-size: 0.75rem;
     
             &:hover{
+                color: $white;
                 background-position: 100% 100%;
                 transform: scale(1.1);
             }
@@ -333,11 +366,15 @@ h1, h2{
     padding: 1rem;
     font-weight: 200;
     margin-top: 2rem;
+    width: 100%;
     
     .title{
-        font-family: $bebas;
-        color: $lighterPurple;
-        font-size: 2rem;
+        span{
+            font-family: $bebas;
+            color: $lighterPurple;
+            font-size: 2rem;
+        }
+        
     }
 
     div{
@@ -492,7 +529,9 @@ h1, h2{
     
         section{
             .title{
-                font-size: 2.5rem;
+                span{
+                    font-size: 2.5rem;
+                }
             }
     
             .divider{

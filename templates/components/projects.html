@@ -1,5 +1,8 @@
 <section id="projects">
-    <h2 class="title">Projects</h2>
+    <h2 class="title">
+        <span class="en">Projects</span>
+        <span class="pt">Projetos</span>
+    </h2>
     <div class="divider"></div>
     <div id="projects-container">
         {% for project in projects %}
@@ -11,10 +14,17 @@
             
             <img src="{{project.screenshot}}" alt="{{project.name}} screenshot" />
             
-            <p class="description">{{project.description}}</p>
+            <p class="description en">{{project.description.en}}</p>
+            <p class="description pt">{{project.description.pt}}</p>
             <div class="urls">
-                <a href="{{ project.url }}" target="_blank">Project URL</a>
-                <a href="{{ project.repo_url }}" target="_blank">Project Repo URL</a>
+                <a href="{{ project.url }}" target="_blank">
+                    <span class="en">Project URL</span>
+                    <span class="pt">Link do Projeto</span>
+                </a>
+                <a href="{{ project.repo_url }}" target="_blank">
+                    <span class="en">Project Repo URL</span>
+                    <span class="pt">Link do Repositório</span>
+                </a>
             </div>
             <div class="technologies">
                 {% for technology in project.technologies %}
@@ -25,6 +35,9 @@
         {% endfor %}
     </div>
     <div class="buttonContainer">
-        <button type="button" id="show-more">Show more</button>
+        <button type="button" id="show-more">
+            <span class="en">Show more</span>
+            <span class="pt">Mostrar mais</span>
+        </button>
     </div>
 </section>
