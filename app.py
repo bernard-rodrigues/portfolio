@@ -4,6 +4,7 @@ import json, sys
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 # Import BeautifulSoup to format the HTML output
 from bs4 import BeautifulSoup
+from bs4.formatter import HTMLFormatter
 
 # Import selenium to screenshot capture
 import time
@@ -67,7 +68,8 @@ def main(screenshotting=False):
 
     # Use BeautifulSoup to format the HTML output
     soup = BeautifulSoup(rendered_template, "html.parser")
-    formatted_html = soup.prettify()
+    formatter = HTMLFormatter(indent=4)
+    formatted_html = soup.prettify(formatter=formatter)
 
     # Define the output file path
     output_path = "./index.html"
