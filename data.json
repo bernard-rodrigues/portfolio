@@ -108,6 +108,17 @@
         ],
         "projects": [
             {
+                "name": "Crab Game",
+                "description": {
+                    "en": "A strategic board game where players move crabs across a 6x6 grid with the goal of getting four of their crabs in a row, either horizontally or vertically",
+                    "pt": "Um jogo de tabuleiro estratégico onde os jogadores movem caranguejos em uma grade 6x6 com o objetivo de colocar quatro de seus caranguejos em uma fileira, horizontalmente ou verticalmente"
+                },
+                "url": "https://crab-game-react.vercel.app/",
+                "repo_url": "https://github.com/bernard-rodrigues/crab_game_react",
+                "category": "game",
+                "technologies": ["React", "Typescript", "TailwindCSS"]
+            },
+            {
                 "name": "Torch Legend",
                 "description": {
                     "en": "A fully HTML, CSS and JS horror game",
