@@ -2,11 +2,13 @@
     "data": {
         "bio": {
             "en": [
-                "🎓 I graduated in Computational Engineering from the Federal University of Juiz de Fora (UFJF) in 2019. Due to the Covid-19 pandemic, I only started my professional career in 2022 as a developer at UFJF’s Distance Education Center (CEAD | UFJF), working on e-learning systems with a Django backend and a React frontend. In 2023, I took on the role of E-learning Platform Administrator at the Center for Public Policies and Education Assessment (CAEd), a UFJF foundation, where I still work today.",
+                "📝 I'm currently pursuing a postgraduate specialization in Software Project Management in the Era of Sensor Data and AI at Federal University of Juiz de Fora (UFJF).",
+                "🎓 I graduated in Computational Engineering from the UFJF in 2019. Due to the Covid-19 pandemic, I only started my professional career in 2022 as a developer at UFJF’s Distance Education Center (CEAD | UFJF), working on e-learning systems with a Django backend and a React frontend. In 2023, I took on the role of E-learning Platform Administrator at the Center for Public Policies and Education Assessment (CAEd), a UFJF foundation, where I still work today.",
                 "🎮 I’m passionate about game development and love participating in the Global Game Jam every year, as well as smaller jams whenever possible. 🎶 In my free time, I play the piano and stream on Twitch!"
             ],
             "pt": [
-                "🎓 Sou graduado em Engenharia Computacional pela Universidade Federal de Juiz de Fora (UFJF) em 2019. Devido à pandemia de Covid-19, só iniciei minha carreira profissional em 2022 como desenvolvedor no Centro de Educação a Distância da UFJF (CEAD | UFJF), trabalhando em sistemas EAD com backend em Django e frontend em React. Em 2023, assumi o papel de Administrador de Plataformas de EAD no Centro de Políticas Públicas e Avaliação da Educação (CAEd), uma fundação da UFJF, onde trabalho até hoje.",
+                "📚 Atualmente, estou cursando a Especialização em Gerência de Projetos de Software na Era de Dados de Sensores e IA na Universidade Federal de Juiz de Fora (UFJF).",
+                "🎓 Sou graduado em Engenharia Computacional pela UFJF em 2019. Devido à pandemia de Covid-19, só iniciei minha carreira profissional em 2022 como desenvolvedor no Centro de Educação a Distância da UFJF (CEAD | UFJF), trabalhando em sistemas EAD com backend em Django e frontend em React. Em 2023, assumi o papel de Administrador de Plataformas de EAD no Centro de Políticas Públicas e Avaliação da Educação (CAEd), uma fundação da UFJF, onde trabalho até hoje.",
                 "🎮 Sou apaixonado por desenvolvimento de jogos e amo participar da Global Game Jam anualmente, assim como jams menores sempre que possível. 🎶 No meu tempo livre, toco piano e faço transmissões ao vivo na Twitch!"
             ]
         },
@@ -46,24 +48,24 @@
         ],
         "work_experience": [
             {
-                "company": "CódigoKid",
+                "company": "CAEd | UFJF",
                 "role": {
-                    "en": "Programming Instructor",
-                    "pt": "Instrutor de Programação"
+                    "en": "EAD Systems Assistant VI",
+                    "pt": "Assistente de Sistemas EAD VI"
                 },
                 "work_start": {
-                    "en": "March, 2019",
-                    "pt": "Março, 2019"
+                    "en": "August, 2023",
+                    "pt": "Agosto, 2023"
                 },
                 "work_end": {
-                    "en": "September, 2019",
-                    "pt": "Setembro, 2019"
+                    "en": "Current day",
+                    "pt": "Dia atual"
                 },
                 "description": {
-                    "en": "Instructed children and teenagers in fundamental programming concepts, game development, and introductory robotics. Utilized visual programming environments like Construct 2 and 3 to teach game logic and design, Kodu for 3D game creation, and Arduino for hands-on experience with physical computing and robotics principles.",
-                    "pt": "Instruí crianças e adolescentes em conceitos fundamentais de programação, desenvolvimento de jogos e robótica introdutória. Utilizei ambientes de programação visual como Construct 2 e 3 para ensinar lógica e design de jogos, Kodu para criação de jogos 3D e Arduino para experiência prática com computação física e princípios de robótica."
+                    "en": "Maintained PHP-based systems for the Center for Distance Education (CAEd|UFJF), adhering to coding standards for rapid and scalable development. Implemented new features and enhancements to streamline educational processes and tools. Managed and customized the Moodle Learning Management System (LMS), ensuring effective content organization, user management, and platform stability. Utilized MySQL for data management and Bootstrap for responsive frontend development.",
+                    "pt": "Dei manutenção em sistemas baseados em PHP para o Centro de Educação a Distância (CAEd|UFJF), seguindo padrões de codificação para desenvolvimento rápido e escalável. Implementei novos recursos e melhorias para otimizar processos e ferramentas educacionais. Gerenciei e personalizei o Ambiente Virtual de Aprendizagem Moodle (AVA), garantindo a organização eficaz do conteúdo, gerenciamento de usuários e estabilidade da plataforma. Utilizei MySQL para gerenciamento de dados e Bootstrap para o desenvolvimento de frontend responsivo."
                 },
-                "technologies": ["Construct 2", "Construct 3", "Kodu", "Arduino"]
+                "technologies": ["PHP", "MySQL", "Bootstrap"]
             },
             {
                 "company": "CEAD | UFJF",
@@ -86,24 +88,24 @@
                 "technologies": ["Django", "React", "DjangoREST", "PostgreSQL"]
             },
             {
-                "company": "CAEd | UFJF",
+                "company": "CódigoKid",
                 "role": {
-                    "en": "EAD Systems Assistant VI",
-                    "pt": "Assistente de Sistemas EAD VI"
+                    "en": "Programming Instructor",
+                    "pt": "Instrutor de Programação"
                 },
                 "work_start": {
-                    "en": "August, 2023",
-                    "pt": "Agosto, 2023"
+                    "en": "March, 2019",
+                    "pt": "Março, 2019"
                 },
                 "work_end": {
-                    "en": "Current day",
-                    "pt": "Dia atual"
+                    "en": "September, 2019",
+                    "pt": "Setembro, 2019"
                 },
                 "description": {
-                    "en": "Maintained PHP-based systems for the Center for Distance Education (CAEd|UFJF), adhering to coding standards for rapid and scalable development. Implemented new features and enhancements to streamline educational processes and tools. Managed and customized the Moodle Learning Management System (LMS), ensuring effective content organization, user management, and platform stability. Utilized MySQL for data management and Bootstrap for responsive frontend development.",
-                    "pt": "Dei manutenção em sistemas baseados em PHP para o Centro de Educação a Distância (CAEd|UFJF), seguindo padrões de codificação para desenvolvimento rápido e escalável. Implementei novos recursos e melhorias para otimizar processos e ferramentas educacionais. Gerenciei e personalizei o Ambiente Virtual de Aprendizagem Moodle (AVA), garantindo a organização eficaz do conteúdo, gerenciamento de usuários e estabilidade da plataforma. Utilizei MySQL para gerenciamento de dados e Bootstrap para o desenvolvimento de frontend responsivo."
+                    "en": "Instructed children and teenagers in fundamental programming concepts, game development, and introductory robotics. Utilized visual programming environments like Construct 2 and 3 to teach game logic and design, Kodu for 3D game creation, and Arduino for hands-on experience with physical computing and robotics principles.",
+                    "pt": "Instruí crianças e adolescentes em conceitos fundamentais de programação, desenvolvimento de jogos e robótica introdutória. Utilizei ambientes de programação visual como Construct 2 e 3 para ensinar lógica e design de jogos, Kodu para criação de jogos 3D e Arduino para experiência prática com computação física e princípios de robótica."
                 },
-                "technologies": ["PHP", "MySQL", "Bootstrap"]
+                "technologies": ["Construct 2", "Construct 3", "Kodu", "Arduino"]
             }
         ],
         "projects": [
