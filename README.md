@@ -1,6 +1,6 @@
 # Portfolio | Bernard Rodrigues
 
-A static website portfolio showcasing personal projects and professional experience, featuring dynamic content generation and automated screenshots.
+Um portfólio online estático que apresenta projetos pessoais e experiência profissional, com geração de conteúdo dinâmico e capturas de tela automatizadas.
 
 ## 📑 Sumário
 - [Descrição do Projeto](#descrição-do-projeto)
@@ -116,7 +116,7 @@ Confira a versão online em:
 ![Design Mobile](./assets/screenshots/screenshot-2.png)
 
 ## 🤝 Contribuição
-Contribuições são muito bem-vindas! Sinta-ce à vontade para abrir uma [Issue](https://github.com/bernard-rodrigues/portifolio/issues) ou enviar um Pull Request.
+Contribuições são muito bem-vindas! Sinta-se à vontade para abrir uma [Issue](https://github.com/bernard-rodrigues/portifolio/issues) ou enviar um Pull Request.
 
 ## 📝 Licença
 Este projeto está sob a licença [MIT](https://choosealicense.com/licenses/mit/).
