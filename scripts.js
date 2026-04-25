@@ -110,16 +110,21 @@ document.addEventListener("DOMContentLoaded", () => {
             animationId = requestAnimationFrame(moveCarousel);
         };
 
-        // Configurar eventos de mouse para todos os itens
-        const setupMouseEvents = () => {
+        // Configurar eventos de mouse e touch para todos os itens
+        const setupInteractionEvents = () => {
             const allItems = document.querySelectorAll(".carousel-item");
             allItems.forEach(item => {
+                // Mouse events
                 item.addEventListener("mouseenter", () => isPaused = true);
                 item.addEventListener("mouseleave", () => isPaused = false);
+                
+                // Touch events
+                item.addEventListener("touchstart", () => isPaused = true, { passive: true });
+                item.addEventListener("touchend", () => isPaused = false, { passive: true });
             });
         };
         
-        setupMouseEvents();
+        setupInteractionEvents();
         animationId = requestAnimationFrame(moveCarousel);
         
         // Retornar objeto com referência ao animationId para poder cancelar depois
