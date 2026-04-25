@@ -109,7 +109,7 @@ python app.py 1
 
 ## 👀 Demo
 Confira a versão online em:  
-[bernard-rodrigues.github.io/portifolio](http://bernard-rodrigues.github.io/portifolio)
+[bernard-rodrigues.github.io/portfolio](http://bernard-rodrigues.github.io/portfolio)
 
 ## 📸 Screenshots
 ![Design Desktop](./assets/screenshots/screenshot-1.png)
