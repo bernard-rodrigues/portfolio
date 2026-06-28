@@ -44,7 +44,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/bernard-rodrigues/portifolio.git
+   git clone https://github.com/bernard-rodrigues/portfolio.git
    cd portifolio
    ```
 
@@ -116,7 +116,7 @@ Confira a versão online em:
 ![Design Mobile](./assets/screenshots/screenshot-2.png)
 
 ## 🤝 Contribuição
-Contribuições são muito bem-vindas! Sinta-se à vontade para abrir uma [Issue](https://github.com/bernard-rodrigues/portifolio/issues) ou enviar um Pull Request.
+Contribuições são muito bem-vindas! Sinta-se à vontade para abrir uma [Issue](https://github.com/bernard-rodrigues/portfolio/issues) ou enviar um Pull Request.
 
 ## 📝 Licença
 Este projeto está sob a licença [MIT](https://choosealicense.com/licenses/mit/).
